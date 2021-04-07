@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300&display=swap');
+
+:root {
+  font-family: 'Montserrat', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(bg.jpg) fixed;
+  background-size: cover;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  height: auto;
+  border-radius: 10px 10px;
+  border: none;
+  background: rgba(255, 255, 255, 0.411);
+}
+
+.logo {
+  padding-bottom: 20px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 4rem;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input {
+  display: inline-block;
+  padding: 15px;
+  font-size: 1.3rem;
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.37);
+  border-radius: 5px 5px;
+  border: 1px solid rgb(255, 255, 255);
+  font-family: inherit;
+}
+
+.input::placeholder {
+  color: white;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 2rem;
+  width: 8%;
+  border-radius: 100px 100px;
+  border: 1px solid rgb(255, 255, 255);
+  background:rgb(142, 127, 255);
+  color: rgb(255, 255, 255);
+}
+
+.btn:hover {
+  display: inline-block;
+  font-size: 2rem;
+  width: 8%;
+  border-radius: 100px 100px;
+  border: 1px solid rgb(255, 255, 255);
+  background:rgba(255, 255, 255, 0.37);
+  color: rgb(255, 255, 255);
+  transition: .2s;
+}
+
+.todos {
+  margin-top: 30px;
+  border-radius: 5px 5px;
+  border: 1px solid rgb(190, 190, 190);
+  padding: 5px;
+  background-color: rgb(255, 255, 255);
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  font-size: 1.2rem;
+  border-bottom: 1px solid rgb(221, 221, 221);
+  color: rgb(31, 31, 31);
+}
+
+.todo:last-child {
+  border-bottom: none;
+}
+
+.todo:hover {
+  background: rgba(255, 199, 199, 0.219);
+  color: rgb(0, 0, 0);
+  border-radius: 5px 5px;
+}
+
+.error,
+.success {
+  text-align: center;
+  font-size: 1.1rem;
+  width: 90%;
+  border-radius: 5px 5px;
+  border: 1px solid rgb(204, 204, 204);
+  padding: 8px;
+  margin-bottom: 15px;
+}
+
+.error {
+  color: rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255);
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+.success {
+  color: rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255);
+  background-color: rgba(0, 129, 0, 0.5);
+}
+
+.delete {
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 5px 10px;
+  background: rgb(255, 99, 71);
+  color: rgb(255, 255, 255);
+}
+
+.delete:hover {
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 5px 10px;
+  background: rgb(194, 49, 24);
+  color: rgb(255, 255, 255);
+}
+
+.done, 
+.undone {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+.webtech {
+  font-size: .8rem;
+  color: aqua;
+}
